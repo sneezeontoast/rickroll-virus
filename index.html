@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="darkreader-lock">
+
+		<meta name="Author" content="The ADR and Jazzy (2020 onwards - Endermanch)">
+		<meta name="Keywords" content="computer virus, virus, trojan, you are an idiot, youareanidiot.cc, youareanidiot.org, idiot, youdontknowwhoiam.org">
+		<meta name="Description" content="The official HTML5 port of the legendary infamous YouAreAnIdiot JS Trojan. ☺ ☺ ☺ Once found on www.youdontknowwhoiam.org, preserved here. The original author is unknown.">
+		
+		<!--
+			ADR & Jazzy's description:
+			<meta name="Description" content="This is the orgional and the best flash video on the 'net.  Once found on www.youdontknowwhoiam.org, not found where it belong, right here on www.youareanidiot.org.">
+		-->
+		
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="You are an Idiot! (dot cc)">
+		<meta property="og:description" content="The official HTML5 port of the legendary infamous YouAreAnIdiot JS Trojan.">
+		<meta property="og:url" content="https://youareanidiot.cc/">
+		<meta property="og:image" content="media/idiot.png">
+		<meta property="og:image:secure_url" content="media/idiot.png">
+		<meta property="og:image:width" content="256">
+		<meta property="og:image:height" content="256">
+		<meta property="og:image:alt" content="Idiot!">
+
+		<title>You are an Idiot! (dot cc)</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		
+		<link rel="stylesheet" href="styles/styles.css" type="text/css" />
+	</head>
+
+	<body class="adaptive">
+		<nav class="controls adaptive">
+			<img class="speaker clicky" id="youare-micon" src="media/speakerm.png" alt="Mute control">
+			
+	
+		</nav>
+		
+		<main class="idiot clicky" id="youare-container">
+			<video autoplay loop id="myVideo">
+			  <source src="media/gonna.mp4" type="video/mp4">
+			</video>
+			
+			<script>
+    window.addEventListener('load', function() {
+        var video = document.getElementById("myVideo");
+
+        // Check if the video is muted and try to autoplay
+        video.play().then(() => {
+            // Autoplay succeeded
+        }).catch(() => {
+            // If autoplay fails (like due to sound), handle it:
+            // Play video after user interacts with the page (like a click)
+            video.addEventListener('click', function() {
+                video.play();
+            });
+        });
+    });
+</script>
+			
+			
+		</main>	
+		
+		<footer class="contact" id="youare-footer">
+			<a class="small" href="updates.html">v1.4</a>
+			<span>
+				Made with 💖 by <a class="link" target="_blank" href="https://go.enderman.ch/youtube">Enderman</a><br>
+				Feedback: <a class="link" href="cdn-cgi/l/email-protection.html#d6afb9a3b7a4b396b3b8b2b3a4bbb7b8f8b5be"><span class="__cf_email__" data-cfemail="d1a8bea4b0a3b491b4bfb5b4a3bcb0bfffb2b9">[email&#160;protected]</span></a>
+			</span>
+		</footer>
+	
+		
+		
+		
+
+		<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="scripts/safe.js" type="application/javascript"></script>
+		<script src="scripts/math.js" type="application/javascript"></script>
+		<script src="scripts/cleanup.js" type="application/javascript"></script>
+		<script src="scripts/you.js" type="application/javascript"></script>
+	</body>
+</html>
