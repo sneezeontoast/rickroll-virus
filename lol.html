@@ -5,26 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="darkreader-lock">
 
-		<meta name="Author" content="The ADR and Jazzy (2020 onwards - Endermanch)">
+		<meta name="Author" content="sneezeontoast https://github.com/sneezeontoast/">
 		<meta name="Keywords" content="computer virus, virus, trojan, you are an idiot, youareanidiot.cc, youareanidiot.org, idiot, youdontknowwhoiam.org">
-		<meta name="Description" content="The official HTML5 port of the legendary infamous YouAreAnIdiot JS Trojan. ☺ ☺ ☺ Once found on www.youdontknowwhoiam.org, preserved here. The original author is unknown.">
+		<meta name="Description" content="a rickrolll virus based on you are an idiot found at https://github.com/sneezeontoast/youareanidiot.cc">
 		
-		<!--
-			ADR & Jazzy's description:
-			<meta name="Description" content="This is the orgional and the best flash video on the 'net.  Once found on www.youdontknowwhoiam.org, not found where it belong, right here on www.youareanidiot.org.">
-		-->
+	
 		
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="You are an Idiot! (dot cc)">
-		<meta property="og:description" content="The official HTML5 port of the legendary infamous YouAreAnIdiot JS Trojan.">
+		<meta property="og:title" content="Best site!!!">
+		<meta property="og:description" content="GitHub version of the infamous YouAreAnIdiot JS Trojan.">
 		<meta property="og:url" content="https://youareanidiot.cc/">
 		<meta property="og:image" content="media/idiot.png">
 		<meta property="og:image:secure_url" content="media/idiot.png">
 		<meta property="og:image:width" content="256">
 		<meta property="og:image:height" content="256">
-		<meta property="og:image:alt" content="Idiot!">
+		<meta property="og:image:alt" content="Cool!">
 
-		<title>You are an Idiot! (dot cc)</title>
+		<title>Best site!!!</title>
 
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -40,11 +37,26 @@
 		</nav>
 		
 		<main class="idiot clicky" id="youare-container">
-			<video autoplay muted loop id="myVideo">
+			<video autoplay loop id="myVideo">
 			  <source src="media/gonna.mp4" type="video/mp4">
 			</video>
 			
-		
+			<script>
+    window.addEventListener('load', function() {
+        var video = document.getElementById("myVideo");
+
+        // Check if the video is muted and try to autoplay
+        video.play().then(() => {
+            // Autoplay succeeded
+        }).catch(() => {
+            // If autoplay fails (like due to sound), handle it:
+            // Play video after user interacts with the page (like a click)
+            video.addEventListener('click', function() {
+                video.play();
+            });
+        });
+    });
+</script>
 			
 			
 		</main>	
@@ -56,15 +68,6 @@
 				Feedback: <a class="link" href="cdn-cgi/l/email-protection.html#d6afb9a3b7a4b396b3b8b2b3a4bbb7b8f8b5be"><span class="__cf_email__" data-cfemail="d1a8bea4b0a3b491b4bfb5b4a3bcb0bfffb2b9">[email&#160;protected]</span></a>
 			</span>
 		</footer>
-		
-		
-		<audio id="youare-audio" hidden>
-			<source src="media/youare.mp3" type="audio/mp3">
-		</audio>
-		
-		<audio id="youare-overlap" hidden>
-			<source src="media/youare.mp3" type="audio/mp3">
-		</audio>
 	
 		
 		
